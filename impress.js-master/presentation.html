@@ -1,0 +1,93 @@
+<<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <!--
+        
+        Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
+        presentation to work.
+        
+        This style below contains styles only for demo presentation. Browse it to see how impress.js
+        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
+        you to use them directly in your presentation.
+        
+        Be creative, build your own. We don't really want all impress.js presentations to look the same,
+        do we?
+        
+        When creating your own presentation get rid of this file. Start from scratch, it's fun!
+        
+    -->
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+
+<style>
+body{
+    background-color: #dfdfdf;
+}
+.box {
+    display: block;
+    width: 800px;
+    height: 600px;
+    padding: 30px 50px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(102, 102, 102);
+}
+.image {
+    width: 2500px;
+    height: 700px;
+  
+}
+</style>
+</head>
+<body>
+
+<div id="impress">
+
+<div class="step box" data-x="0" data-y="0">
+<h>Estructura de las organizaciones</h>
+<h2>Grupo F2</h2>
+<p>Integrantes: Andres Otero,Jazmin Ferreiro,Tobias Vidal,Tobias Bianchi,Federico Brasburg y German Concilio</p>
+</div>
+
+<div  class="step box"  data-x="450" data-y="0" data-z="-450" data-rotate-x="0" data-rotate-y="90" data-rotate-z="0" >
+<p>Integrantes: Andres Otero,Jazmin Ferreiro,Tobias Vidal,Tobias Bianchi,Federico Brasburg y German Concilio</p>
+
+</div>
+<div  class="step box"  data-x="0" data-y="0 " data-z="-900" data-rotate-x="0" data-rotate-y="180" data-rotate-z="0" >
+<p>Integrantes: Andres Otero,Jazmin Ferreiro,Tobias Vidal,Tobias Bianchi,Federico Brasburg y German Concilio</p>
+
+</div>
+<div  class="step box"  data-x="-450" data-y="0 " data-z="-450" data-rotate-x="0" data-rotate-y="270" data-rotate-z="0" >
+<p>Integrantes: Andres Otero,Jazmin Ferreiro,Tobias Vidal,Tobias Bianchi,Federico Brasburg y German Concilio</p>
+</div>
+<div  class="step box"  data-x="-450" data-y="-660" data-z="-450" data-rotate-x="0" data-rotate-y="270" data-rotate-z="0" >
+<p>Integrantes: Andres Otero,Jazmin Ferreiro,Tobias Vidal,Tobias Bianchi,Federico Brasburg y German Concilio</p>
+</div>
+ <div class="step image" data-x="1000" data-y="2000"  >
+    <img src="img/OrganigramaSinFondo.png" >
+
+</div>
+<script src="js/impress.js"></script>
+<script>
+impress().init();
+</script>
+</body>
